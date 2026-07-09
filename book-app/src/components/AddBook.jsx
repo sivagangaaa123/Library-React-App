@@ -1,8 +1,11 @@
 import React from 'react'
+import NavigationBar from './NavigationBar'
 
 const AddBook = () => {
   return (
     <div>
+        <NavigationBar/>
+        <h1><center>   <u>Add a Book</u> </center></h1>
         <div className="container">
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -37,18 +40,18 @@ const AddBook = () => {
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Number of Copies</label>
-                            <input type="text" className="form-control" />
+                            <input type="number" className="form-control" />
 
 
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Price</label>
-                            <input type="text" className="form-control" />
+                            <input type="number" className="form-control" />
 
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Publication Year</label>
-                            <input type="text" className="form-control" />
+                            <input type="number" className="form-control" />
 
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -56,10 +59,8 @@ const AddBook = () => {
                             <input type="text" className="form-control" />
 
                         </div>
-                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-3">
                             <button className="btn btn-success">Submit</button>
-
-
                         </div>
                     </div>
 
@@ -67,11 +68,6 @@ const AddBook = () => {
                 </div>
             </div>
         </div>
-
-
-
-
-
     </div>
   )
 }
